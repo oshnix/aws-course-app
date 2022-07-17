@@ -7,7 +7,8 @@ export const getProductsListConfiguration: FunctionConfiguration = {
         {
             http: {
                 method: 'GET',
-                path: '/products'
+                path: '/products',
+                cors: true,
             }
         }
     ]
@@ -19,7 +20,8 @@ export const getProductsByIdConfiguration: FunctionConfiguration = {
         {
             http: {
                 method: 'GET',
-                path: '/products/{id}'
+                path: '/products/{id}',
+                cors: true,
             }
         }
     ]
