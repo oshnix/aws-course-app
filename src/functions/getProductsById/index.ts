@@ -16,9 +16,7 @@ function getProductsById(event: ValidatedAPIGatewayProxyEvent<any>): APIGatewayP
     const { id } = event.pathParameters;
     const product = getProduct(id);
 
-    return formatJSONResponse({
-        product,
-    });
+    return formatJSONResponse(product);
 }
 
 export const handler = middyfy(getProductsById);
